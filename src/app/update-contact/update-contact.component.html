@@ -1,0 +1,21 @@
+<h3>Update Contact</h3>
+<div style="width: 400px;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name"> Name</label>
+      <input type="text" class="form-control" id="name" required [(ngModel)]="contact.name" name="name">
+    </div>
+
+    <div class="form-group">
+      <label for="name">age</label>
+      <input type="age" class="form-control" id="age" required [(ngModel)]="contact.age" name="age">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Email</label>
+      <input type="text" class="form-control" id="email" required [(ngModel)]="contact.email" name="email">
+    </div>
+
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>

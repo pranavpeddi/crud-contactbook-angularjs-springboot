@@ -28,5 +28,13 @@ export class ContactService
          return this.http.get(`${this.baseUrl}/contact/${id}`);
      }
 
+     updateContact(id:number,value:any):Observable<Object>{
+         return this.http.put(`${this.baseUrl}conactsupdate/${id}`,value);
+     }
+
+     deleteContact(id:number):Observable<any>{
+         return this.http.delete(`${this.baseUrl}/contacts/${id}`);
+     }
+
     
 }

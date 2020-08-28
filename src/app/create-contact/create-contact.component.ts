@@ -24,7 +24,7 @@ submitted=false;
     this.ContactService.createContact(this.contact).subscribe(data=>{
       console.log(data);
       this.contact=new Contact();
-      this.router.navigate(['/contact'])
+      this.router.navigate(['/contacts']);
     },error=>console.log(error.message));
   }
 

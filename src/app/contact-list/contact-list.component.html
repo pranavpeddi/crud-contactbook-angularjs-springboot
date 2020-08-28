@@ -6,6 +6,7 @@
             <th>FirstName</th>
             <th>age</th>
             <th>Contact List</th>
+            <th>Actions</th>
 
         </tr>
     </thead>
@@ -14,6 +15,9 @@
             <td>{{contact.name}}</td>
             <td>{{contact.age}}</td>
             <td>{{contact.email}}</td>
+            <td><button (click)="deleteContact(contact.id)" class="btn btn-danger">Delete</button>
+                <td><button (click)="updateContact(contact.id)" class="btn btn-success" >Update</button></td>
+            <td><button (click)="contactDetails(contact.id)" class="btn btn-info">Details</button></td>
         </tr>
     </tbody>
 </table>
